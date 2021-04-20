@@ -17,18 +17,12 @@ def converter(value_pesos, country):
 
 
 if option == 1:
-    value_pesos = 0.050
-    country = 'Mexican'
-    converter(value_pesos, country)
+    converter(0.050, 'Mexican')
 
 elif option == 2:
-    value_pesos = 0.00028
-    country = 'Colombian'
-    converter(value_pesos, country)
+    converter(0.00028, 'Colombian')
 
 elif option == 3:
-    value_pesos = 0.011
-    country = 'Argentine'
-    converter(value_pesos, country)
+    converter(0.011, 'Argentine')
 else:
     print('Enter a correct option.')
