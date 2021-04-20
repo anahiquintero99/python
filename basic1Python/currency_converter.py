@@ -1,3 +1,9 @@
+def converter(value_pesos, country):
+    pesos = float(input('Enter amount: '))
+    dollars = value_pesos * pesos
+    print(f'{country} Pesos: {pesos} = {round(dollars, 2)} dollars')
+
+
 menu = """
 Welcome to the currency converter
   
@@ -8,12 +14,6 @@ Welcome to the currency converter
   Choose an option:  """
 
 option = int(input(menu))
-
-
-def converter(value_pesos, country):
-    pesos = float(input('Enter amount: '))
-    dollars = value_pesos * pesos
-    print(f'{country} Pesos: {pesos} = {round(dollars, 2)} dollars')
 
 
 if option == 1:
