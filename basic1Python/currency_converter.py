@@ -15,7 +15,6 @@ Welcome to the currency converter
 
 option = int(input(menu))
 
-
 if option == 1:
     converter(0.050, 'Mexican')
 
