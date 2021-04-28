@@ -1,21 +1,23 @@
+# function to add data to list
+def info():
+    name = input('What is your name?: ')
+    years = int(input('How old are you?: '))
+    people = []
+    people.append(name)
+    people.append(years)
+    return people
+
+# fuction to compare one age with another age
+
 
 def run():
-    first_people = []
-    name = input('What is your name?: ')
-    first_people.append(name)
-    years = int(input('How old are you?: '))
-    first_people.append(years)
+    first = info()
+    second = info()
 
-    second_people = []
-    name = input('What is your name?: ')
-    second_people.append(name)
-    years = int(input('How old are you?: '))
-    second_people.append(years)
-
-    if second_people[1] > first_people[1]:
-        print(f'{second_people[0]} es mayor de edad que {first_people[0]}')
-    elif second_people[1] < first_people[1]:
-        print(f'{second_people[0]} es menor de edad que {first_people[0]}')
+    if second[1] > first[1]:
+        print(f'{second[0]} {second[1]} es mayor que {first[0]}{first[1]}')
+    elif second[1] < first[1]:
+        print(f'{second[0]} {second[1]} es menor que {first[0]}{first[1]}')
     else:
         print('Son de la misma edad.')
 
