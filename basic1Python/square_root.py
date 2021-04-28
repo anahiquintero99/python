@@ -6,9 +6,9 @@ def run():
     square_number = int(math.sqrt(number))
 
     if number % square_number == 0:
-        print(f'{number} = {square_number} Es raiz cuadrada exacta.')
+        print(f'Raiz cuadrada de {number} es {square_number} es exacta.')
     else:
-        print('La raiz cuadrada no es exacta.')
+        print(f'{number} No tiene raiz cuadrada exacta.')
 
 
 if __name__ == '__main__':
