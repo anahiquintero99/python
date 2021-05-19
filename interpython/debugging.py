@@ -6,13 +6,16 @@ def divisors(num):
   return divisors
 
 def run():
-  try:
-    num = int(input('Ingresa numero:'))
-    print(divisors(num))
-    print('Termino mi programa.')
-    print(num)
-  except ValueError:
-    print('Solo se pueden ingresar numeros')
+  while True:
+    try:
+      num = int(input('Ingresa numero:'))
+      print(divisors(num))
+      print('Termino mi programa.')
+      if num < 0:
+        raise ValueError("No se puede ingresar un numero negativo")
+      return divisors(num)
+    except ValueError:
+      print('Solo se pueden ingresar numeros')
   
 
 if __name__ == '__main__':
